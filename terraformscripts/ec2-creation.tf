@@ -1,16 +1,16 @@
 
 provider "aws"{
-region = "ap-south-1"
+region = "us-east-1"
 }
 
 resource "aws_instance" "AWSInstance" {
      count ="3"
-     ami = "ami-06791f9213cbb608b"
+     ami = "ami-0dbc3d7bc646e8516"
 	 instance_type = "t2.micro"
-	 key_name = "devopsmss"
-	 security_groups = ["launch-wizard-2"]
+	 key_name = "varunkey"
+	 security_groups = ["launch-wizard-15"]
 	 tags = {
-	 Name = "tomcatserver"
+	 Name = "new"
 	 }
 }
 
